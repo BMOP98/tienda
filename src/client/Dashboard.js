@@ -9,7 +9,7 @@ const Dashboard = () => {
     const fetchProducts = async () => {
       try {
         var item_valueid = sessionStorage.getItem("item_key");
-        const response = await fetch('https://problem2-1.azurewebsites.net//apiproduct/' + item_valueid);
+        const response = await fetch('https://problem2-3.azurewebsites.net/apiproduct/' + item_valueid);
         if (response.ok) {
           const data = await response.json();
           setproducts(data);
